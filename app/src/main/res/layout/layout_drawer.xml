@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@mipmap/drawer_back">
+
+        <RelativeLayout
+            android:id="@+id/rlTopLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civHead"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_toRightOf="@id/civHead"
+                android:orientation="vertical"
+                android:paddingRight="10dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_black"
+                    android:textSize="20sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvIsAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="7dp"
+                    android:textColor="@color/explainColor"
+                    android:textSize="14sp" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvWallet"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        app:sDividerLineType="none"
+        app:sLeftIconHeight="25dp"
+        app:sLeftIconMarginLeft="29dp"
+        app:sLeftIconRes="@mipmap/drawer_wallet"
+        app:sLeftIconWidth="25dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="@string/drawer_wallet" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvTravel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:sDividerLineType="none"
+        app:sLeftIconHeight="25dp"
+        app:sLeftIconMarginLeft="29dp"
+        app:sLeftIconRes="@mipmap/drawer_travel"
+        app:sLeftIconWidth="25dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="@string/drawer_travel" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvCoupon"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:sDividerLineType="none"
+        app:sLeftIconHeight="25dp"
+        app:sLeftIconMarginLeft="29dp"
+        app:sLeftIconRes="@mipmap/drawer_coupon"
+        app:sLeftIconWidth="25dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="@string/drawer_coupon" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvJoin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:sDividerLineType="none"
+        app:sLeftIconHeight="25dp"
+        app:sLeftIconMarginLeft="29dp"
+        app:sLeftIconRes="@mipmap/drawer_join"
+        app:sLeftIconWidth="25dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="@string/drawer_join" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvMaintain"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:sDividerLineType="none"
+        app:sLeftIconHeight="25dp"
+        app:sLeftIconMarginLeft="29dp"
+        app:sLeftIconRes="@mipmap/drawer_maintain"
+        app:sLeftIconWidth="25dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="@string/drawer_maintain" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvInvite"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:sDividerLineType="none"
+        app:sLeftIconHeight="25dp"
+        app:sLeftIconMarginLeft="29dp"
+        app:sLeftIconRes="@mipmap/drawer_invite"
+        app:sLeftIconWidth="25dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="@string/drawer_invite" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvExchange"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:sDividerLineType="none"
+        app:sLeftIconHeight="25dp"
+        app:sLeftIconMarginLeft="29dp"
+        app:sLeftIconRes="@mipmap/drawer_exchange"
+        app:sLeftIconWidth="25dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="@string/drawer_exchange" />
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvShop"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:sDividerLineType="none"
+        app:sLeftIconHeight="25dp"
+        app:sLeftIconMarginLeft="29dp"
+        app:sLeftIconRes="@mipmap/drawer_wallet"
+        app:sLeftIconWidth="25dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="@string/drawer_shop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvSetting"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:sBackgroundDrawableRes="@color/text_yellow"
+        app:sDividerLineType="none"
+        app:sLeftIconHeight="25dp"
+        app:sLeftIconMarginLeft="29dp"
+        app:sLeftIconRes="@mipmap/drawer_setting"
+        app:sLeftIconWidth="25dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="@string/drawer_setting" />
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lineColor"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_account">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:hint="输入新手机号"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingHorizontal="17dp"
+                android:paddingVertical="12dp"
+                android:textColor="@color/text_black"
+                android:textSize="17sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="17dp"
+            android:background="@color/lineColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tv_account"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:ellipsize="end"
+                    android:hint="输入短信验证码"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingHorizontal="17dp"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.ruanjie.donkey.widget.TimerTextView
+                android:id="@+id/ttvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/selector_timer"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="9dp"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="17dp"
+            android:background="@color/lineColor" />
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="38dp"
+            android:layout_marginTop="49dp"
+            android:background="@drawable/shape_change_phone_over"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

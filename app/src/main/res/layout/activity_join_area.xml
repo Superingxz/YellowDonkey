@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD600">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/ivImageTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/area_image_1" />
+
+        <LinearLayout
+            android:id="@+id/llInputLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivImageTop"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/area_image_2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="65dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_join"
+                    android:ellipsize="end"
+                    android:hint="请填写真实有效信息"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="14dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_join"
+                    android:ellipsize="end"
+                    android:hint="您的联系方式"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="14dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="区域"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tvArea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_join"
+                    android:ellipsize="end"
+                    android:hint="请选择代理区域"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="14dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llInputLayout"
+            android:layout_marginHorizontal="38dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/shape_change_phone_over"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

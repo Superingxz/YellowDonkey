@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <com.noober.background.view.BLTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="选择优惠券"
+        android:textColor="@color/text_black"
+        android:textSize="18sp"
+        app:bl_corners_topLeftRadius="9dp"
+        app:bl_corners_topRightRadius="9dp"
+        app:bl_solid_color="@color/white" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        app:bl_solid_color="@color/white"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+    <TextView
+        android:id="@+id/tvOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_black"
+        android:gravity="center"
+        android:paddingVertical="11dp"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

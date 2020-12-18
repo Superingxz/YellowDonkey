@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mDrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/fragment_map"
+        class="com.tencent.map.sdk.compat.SupportMapFragmentCompat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_toolbar">
+
+            <com.superluo.textbannerlibrary.TextBannerView
+                android:id="@+id/tv_notify_message"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_radius_black"
+                android:paddingStart="20dp"
+                android:visibility="gone"
+                app:setDirection="top_to_bottom"
+                app:setSingleLine="true"
+                app:setTextColor="@color/white"
+                app:setTextSize="16sp" />
+
+            <include
+                layout="@layout/layout_useing_vehicle_code"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/top_layout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            app:tl_tab_width="100dp"
+            tl:tl_bar_color="@color/white"
+            tl:tl_indicator_color="@color/text_black"
+            tl:tl_textBold="BOTH" />
+
+        <include layout="@layout/layout_image_toolbar" />
+
+        <!-- <android.support.v7.widget.AppCompatImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:src="@mipmap/location_tag_icon" />-->
+
+        <include
+            layout="@layout/layout_customer_service"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_10">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:src="@mipmap/location_icon" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/bt_scan_unlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_radius_black"
+                android:gravity="center"
+                android:paddingHorizontal="40dp"
+                android:paddingVertical="13dp"
+                android:text="@string/scan_unlock"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_customer_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/customer_service_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/shape_line_hor"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <com.softgarden.baselibrary.widget.NoScrollViewPager
+            android:id="@+id/mViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <include
+        layout="@layout/layout_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</android.support.v4.widget.DrawerLayout>

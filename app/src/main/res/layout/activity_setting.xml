@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvAboutWe"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingHorizontal="10dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="17sp"
+        app:sLeftTextString="关于我们"
+        app:sRightIconRes="@mipmap/next_gray" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_user_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingHorizontal="10dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="17sp"
+        app:sLeftTextString="用户协议"
+        app:sRightIconRes="@mipmap/next_gray" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvChangePwd"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingHorizontal="10dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="17sp"
+        app:sLeftTextString="修改密码"
+        app:sRightIconRes="@mipmap/next_gray" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stvCheckVersion"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingHorizontal="10dp"
+        app:sLeftTextColor="@color/text_black"
+        app:sLeftTextSize="17sp"
+        app:sLeftTextString="检查更新"
+        app:sRightIconRes="@mipmap/next_gray"
+        app:sRightTextColor="@color/explainColor"
+        app:sRightTextSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="38dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/shape_change_phone_over"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:text="退出账号"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>
+

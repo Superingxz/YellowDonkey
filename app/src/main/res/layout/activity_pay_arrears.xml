@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="34dp"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="需支付"
+                android:textColor="@color/text_black"
+                android:textSize="20dp"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_arrears"
+                android:layout_centerVertical="true"
+                android:text="￥"
+                android:textColor="@color/text_black"
+                android:textSize="14dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_arrears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/text_black"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lineColor"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="36dp"
+            android:paddingBottom="10dp"
+            android:text="支付方式"
+            android:textColor="@color/hint_gray"
+            android:textSize="14dp" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/wechat_pay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="15dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/pay_wechat"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:text="微信支付"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/v_wechat_pay"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_recharge_pay" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ali_pay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="15dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/pay_ali"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:text="支付宝支付"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/v_ali_pay"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_recharge_pay" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/my_balance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="15dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/pay_balance"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:text="我的余额"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/v_balance"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_recharge_pay" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_conpon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingHorizontal="5dp"
+            app:sDividerLineColor="@color/lineColor"
+            app:sDividerLineType="bottom"
+            app:sLeftTextColor="@color/text_black"
+            app:sLeftTextSize="17sp"
+            app:sLeftTextString="优惠券"
+            app:sRightIconRes="@mipmap/next_gray"
+            app:sRightTextColor="@color/explainColor"
+            app:sRightTextSize="15sp"
+            />
+            <!--app:sRightTextString="抵扣￥0.00" />-->
+       <!-- <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/bank_pay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="15dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/pay_bank"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:text="银联支付"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/v_bank_pay"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_recharge_pay" />
+        </android.support.v7.widget.LinearLayoutCompat>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/lineColor" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="38dp"
+            android:layout_marginVertical="130dp"
+            android:background="@drawable/shape_change_phone_over"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="立即支付"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lineColor"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back_deposit_2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:drawableLeft="@mipmap/back_deposit_1"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="13dp"
+                android:text="温馨提示"
+                android:textColor="#D9F2FF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="17dp"
+                android:text="押金退回后，您将暂时不能使用小黄驴电动车了哦！"
+                android:textColor="#D9F2FF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:paddingHorizontal="17dp"
+            android:text="退押金原因"
+            android:textColor="@color/text_black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tvReason1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="38dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:paddingVertical="14dp"
+            android:text="习惯在用车的时候再充押"
+            android:textColor="@color/text_black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:bl_corners_radius="4dp"
+            app:bl_selected_drawable="@color/text_yellow"
+            app:bl_selected_stroke_color="@color/text_yellow"
+            app:bl_selected_textColor="@color/text_black"
+            app:bl_stroke_width="1dp"
+            app:bl_unSelected_drawable="@color/white"
+            app:bl_unSelected_stroke_color="@color/explainColor"
+            app:bl_unSelected_textColor="@color/explainColor" />
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tvReason2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="38dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingVertical="14dp"
+            android:text="想用车，但经常找不到车"
+            android:textColor="@color/text_black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:bl_corners_radius="4dp"
+            app:bl_selected_drawable="@color/text_yellow"
+            app:bl_selected_stroke_color="@color/text_yellow"
+            app:bl_selected_textColor="@color/text_black"
+            app:bl_stroke_width="1dp"
+            app:bl_unSelected_drawable="@color/white"
+            app:bl_unSelected_stroke_color="@color/explainColor"
+            app:bl_unSelected_textColor="@color/explainColor" />
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tvReason3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="38dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:paddingVertical="14dp"
+            android:text="暂时没有用车的需求"
+            android:textColor="@color/text_black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:bl_corners_radius="4dp"
+            app:bl_selected_drawable="@color/text_yellow"
+            app:bl_selected_stroke_color="@color/text_yellow"
+            app:bl_selected_textColor="@color/text_black"
+            app:bl_stroke_width="1dp"
+            app:bl_unSelected_drawable="@color/white"
+            app:bl_unSelected_stroke_color="@color/explainColor"
+            app:bl_unSelected_textColor="@color/explainColor" />
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tvReason4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="38dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:paddingVertical="14dp"
+            android:text="使用小黄驴电动车的体验不好"
+            android:textColor="@color/text_black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:bl_corners_radius="4dp"
+            app:bl_selected_drawable="@color/text_yellow"
+            app:bl_selected_stroke_color="@color/text_yellow"
+            app:bl_selected_textColor="@color/text_black"
+            app:bl_stroke_width="1dp"
+            app:bl_unSelected_drawable="@color/white"
+            app:bl_unSelected_stroke_color="@color/explainColor"
+            app:bl_unSelected_textColor="@color/explainColor" />
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tvReason5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="38dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:paddingVertical="14dp"
+            android:text="其他"
+            android:textColor="@color/text_black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:bl_corners_radius="4dp"
+            app:bl_selected_drawable="@color/text_yellow"
+            app:bl_selected_stroke_color="@color/text_yellow"
+            app:bl_selected_textColor="@color/text_black"
+            app:bl_stroke_width="1dp"
+            app:bl_unSelected_drawable="@color/white"
+            app:bl_unSelected_stroke_color="@color/explainColor"
+            app:bl_unSelected_textColor="@color/explainColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="59dp"
+            android:layout_marginBottom="71dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.noober.background.view.BLTextView
+                android:id="@+id/tvSubmit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="14dp"
+                android:text="退押金"
+                android:textColor="@color/explainColor"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:bl_corners_radius="1024dp"
+                app:bl_solid_color="#EEEEEE" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.noober.background.view.BLTextView
+                android:id="@+id/tvCancel"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="14dp"
+                android:text="不退了"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:bl_corners_radius="1024dp"
+                app:bl_solid_color="@color/text_black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

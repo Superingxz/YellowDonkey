@@ -1,0 +1,152 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lineColor"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="提现申请将会在1-7个工作日处理完毕"
+            android:textColor="@color/explainColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="20dp"
+            android:text="提现金额"
+            android:textColor="@color/text_black"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="5dp"
+                android:text="￥"
+                android:textColor="@color/text_black"
+                android:textSize="17sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etMoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:hint="请输入提现金额"
+                android:maxLines="1"
+                android:paddingRight="10dp"
+                android:textColorHint="@color/explainColor"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tvAll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="15dp"
+                android:text="全部提现"
+                android:textColor="@color/text_yellow"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/lineColor" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etBankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:ellipsize="end"
+            android:hint="请输入开户银行"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:textColorHint="@color/explainColor"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/lineColor" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etBankNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:ellipsize="end"
+            android:hint="请输入银行卡卡号"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:textColorHint="@color/explainColor"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/lineColor" />
+
+        <TextView
+            android:id="@+id/tvAllMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="16dp"
+            android:text="当前可提现："
+            android:textColor="@color/explainColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="38dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape_change_phone_over"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="提现"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lineColor"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="20dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etNickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_change_nickname"
+                android:ellipsize="end"
+                android:hint="请输入您的新昵称"
+                android:maxLines="1"
+                android:paddingVertical="16dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="45dp"
+                android:textColor="@color/textColor" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingVertical="10dp"
+                android:src="@mipmap/circle_gray_close" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="20dp"
+            android:text="4-16个字符，仅支持中文、英文大小写、数字、“-”、减号及其他组合"
+            android:textColor="@color/explainColor"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

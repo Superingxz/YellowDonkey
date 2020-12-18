@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:orientation="vertical"
+        android:background="@color/progress_gray"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        >
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:lines="8"
+        android:hint="如遇到损坏小黄驴电动车等情况，请反馈给我们！"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:textColorHint="@color/hint_gray"
+        />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_marginTop="59dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/shape_radius_black"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        />
+</android.support.v7.widget.LinearLayoutCompat>

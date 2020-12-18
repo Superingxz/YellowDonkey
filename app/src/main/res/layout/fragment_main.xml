@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/map_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--<android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_radius_black"
+        android:drawableStart="@mipmap/gift_icon"
+        android:drawablePadding="@dimen/dp_12"
+        android:text="活动公告：毕业季共享电动车出游半折"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="13dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        />-->
+
+    <com.superluo.textbannerlibrary.TextBannerView
+        android:id="@+id/tv_notify_message"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_radius_black"
+        android:paddingStart="20dp"
+        app:setDirection="top_to_bottom"
+        app:setSingleLine="true"
+        app:setTextColor="@color/white"
+        app:setTextSize="16sp" />
+
+    <include layout="@layout/layout_useing_vehicle_code"
+             android:visibility="gone"/>
+
+   <android.support.v7.widget.AppCompatImageView
+    android:layout_width="20dp"
+    android:layout_height="36dp"
+    android:layout_centerInParent="true"
+    android:src="@mipmap/location_tag_icon"
+    />
+    <include
+        layout="@layout/layout_customer_service"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/location_icon" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bt_scan_unlock"
+            android:layout_width="150dp"
+            android:layout_height="49dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_radius_black"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/scan_unlock"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_customer_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/customer_service_icon" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/location_tag_icon" />
+</RelativeLayout>

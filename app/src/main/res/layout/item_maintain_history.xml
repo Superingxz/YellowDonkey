@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp">
+
+    <com.noober.background.view.BLLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="14dp"
+        app:bl_corners_radius="9dp"
+        app:bl_stroke_color="@color/explainColor"
+        app:bl_stroke_width="0.5dp">
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/llImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivImage1"
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/ivImage2"
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/ivImage3"
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="right"
+            android:textColor="@color/explainColor"
+            android:textSize="12sp" />
+    </com.noober.background.view.BLLinearLayout>
+</LinearLayout>

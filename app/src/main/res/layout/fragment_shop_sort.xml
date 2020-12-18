@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <com.noober.background.view.BLEditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="10dp"
+        android:background="@color/transparent"
+        android:drawableRight="@mipmap/convert_search_search"
+        android:drawablePadding="11dp"
+        android:gravity="center"
+        android:hint="搜索商家"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/textColor"
+        android:textSize="13sp"
+        app:bl_corners_radius="1024dp"
+        app:bl_solid_color="#f5f5f5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mTypeRecycler"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5"
+            android:scrollbars="none"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mTopRecycler"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+                    app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                    app:spanCount="4" />
+
+                <ImageView
+                    android:id="@+id/ivArrow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="11dp"
+                    android:src="@mipmap/arrow_down_upload" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.noober.background.view.BLTextView
+                            android:id="@+id/tvRightType1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:paddingVertical="13dp"
+                            android:text="综合"
+                            android:textSize="15sp"
+                            app:bl_selected_textColor="@color/orange"
+                            app:bl_unSelected_textColor="@color/textColor" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="9.5dp"
+                            android:background="#f5f5f5" />
+
+                        <com.noober.background.view.BLTextView
+                            android:id="@+id/tvRightType2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:paddingVertical="13dp"
+                            android:paddingRight="13.5dp"
+                            android:text="销量"
+                            android:textSize="15sp"
+                            app:bl_selected_textColor="@color/orange"
+                            app:bl_unSelected_textColor="@color/textColor" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="9.5dp"
+                            android:background="#f5f5f5" />
+
+                        <com.noober.background.view.BLTextView
+                            android:id="@+id/tvRightType3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="13.5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:paddingVertical="13dp"
+                            android:text="好评"
+                            android:textSize="15sp"
+                            app:bl_selected_textColor="@color/orange"
+                            app:bl_unSelected_textColor="@color/textColor" />
+
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/mRightRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/mBootomRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:scrollbars="none"
+                        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                        app:spanCount="3" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#aaf5f5f5" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="line_gray">#CCCCCC</color>
+    <color name="hint_gray">#999999</color>
+    <color name="gradient_transparent">#80FFFFFF</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="progress_gray">#F5F5F5</color>
+    <color name="gray_64">#646464</color>
+    <color name="text_red">#FC5358</color>
+    <color name="inner_gray">#08D5D5D2</color>
+    <color name="outer_gray">#FF848C94</color>
+    <color name="color_type_1">#262626</color>
+    <color name="color_type_2">#808080</color>
+    <color name="color_type_3">#FFFF00</color>
+    <color name="color_inner_1">#26262626</color>
+    <color name="color_inner_2">#26808080</color>
+    <color name="color_inner_3">#26FFFF00</color>
+    <color name="outer_blue">#31a2f7</color>
+    <color name="inner_blue">#0031a2f7</color>
+</resources>

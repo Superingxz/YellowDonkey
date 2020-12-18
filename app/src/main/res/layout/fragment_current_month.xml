@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:background="@mipmap/month_1" />
+
+        <com.noober.background.view.BLLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="34dp"
+            android:background="@mipmap/month_2"
+            android:orientation="vertical"
+            android:padding="23dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="订单总金额(元)"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvAllMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text=""
+                android:textColor="@color/textColor"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+        </com.noober.background.view.BLLinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <com.noober.background.view.BLLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="9dp"
+            android:paddingVertical="19dp"
+            app:bl_stroke_color="#FFF7CE"
+            app:bl_stroke_width="1dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginRight="14dp"
+                android:src="@mipmap/month_3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="车辆"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvCarCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </com.noober.background.view.BLLinearLayout>
+
+        <View
+            android:layout_width="11dp"
+            android:layout_height="match_parent" />
+
+        <com.noober.background.view.BLLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="9dp"
+            android:paddingVertical="19dp"
+            app:bl_stroke_color="#FFF7CE"
+            app:bl_stroke_width="1dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginRight="14dp"
+                android:src="@mipmap/month_4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="总行驶里程(km)"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvAllDistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </com.noober.background.view.BLLinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <com.noober.background.view.BLLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="9dp"
+            android:paddingVertical="19dp"
+            app:bl_stroke_color="#FFF7CE"
+            app:bl_stroke_width="1dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginRight="14dp"
+                android:src="@mipmap/month_5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="优惠券总金额(元)"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvCouponMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </com.noober.background.view.BLLinearLayout>
+
+        <View
+            android:layout_width="11dp"
+            android:layout_height="match_parent" />
+
+        <com.noober.background.view.BLLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="9dp"
+            android:paddingVertical="19dp"
+            android:visibility="invisible"
+            app:bl_stroke_color="#FFF7CE"
+            app:bl_stroke_width="1dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginRight="14dp"
+                android:src="@mipmap/month_4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="总行驶里程(km)"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="899.09"
+                    android:textColor="@color/text_black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </com.noober.background.view.BLLinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

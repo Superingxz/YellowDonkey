@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lineColor"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="20dp"
+            android:text="充值金额"
+            android:textColor="@color/explainColor"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/tv200"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_recharge_money"
+                android:gravity="center"
+                android:paddingVertical="25dp"
+                android:text="￥ 200"
+                android:textColor="@color/text_black"
+                android:textSize="23sp" />
+
+            <View
+                android:layout_width="13dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_recharge_money"
+                android:gravity="center"
+                android:paddingVertical="25dp"
+                android:text="￥ 100"
+                android:textColor="@color/text_black"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/tv50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_recharge_money"
+                android:gravity="center"
+                android:paddingVertical="25dp"
+                android:text="￥ 50"
+                android:textColor="@color/text_black"
+                android:textSize="23sp" />
+
+            <View
+                android:layout_width="13dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_recharge_money"
+                android:gravity="center"
+                android:paddingVertical="25dp"
+                android:text="￥ 20"
+                android:textColor="@color/text_black"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_recharge_money"
+                android:gravity="center"
+                android:paddingVertical="25dp"
+                android:text="￥ 10"
+                android:textColor="@color/text_black"
+                android:textSize="23sp" />
+
+            <View
+                android:layout_width="13dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_recharge_money"
+                android:gravity="center"
+                android:paddingVertical="25dp"
+                android:text="￥ 5"
+                android:textColor="@color/text_black"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="34dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/tvOther"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_recharge_money"
+                android:gravity="center"
+                android:paddingVertical="25dp"
+                android:text="其他金额"
+                android:textColor="@color/text_black"
+                android:textSize="23sp" />
+
+            <View
+                android:layout_width="13dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_recharge_money"
+                android:gravity="center"
+                android:paddingVertical="25dp"
+                android:text="￥ 5"
+                android:textColor="@color/text_black"
+                android:textSize="23sp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/lineColor" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stvConpon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingHorizontal="5dp"
+            app:sDividerLineColor="@color/lineColor"
+            app:sDividerLineType="bottom"
+            app:sLeftTextColor="@color/text_black"
+            app:sLeftTextSize="17sp"
+            app:sLeftTextString="优惠券"
+            app:sRightIconRes="@mipmap/next_gray"
+            app:sRightTextColor="@color/explainColor"
+            app:sRightTextSize="15sp"
+            app:sRightTextString="赠送￥0.00" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:paddingHorizontal="16dp"
+            android:text="选择支付方式"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llWechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/pay_wechat"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:text="微信支付"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/vWechat"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_recharge_pay" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/pay_ali"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:text="支付宝支付"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/vAli"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_recharge_pay" />
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:id="@+id/llBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/pay_bank"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:text="银联支付"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/vBank"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_recharge_pay" />
+        </LinearLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_change_phone_over"
+                android:gravity="center"
+                android:paddingVertical="12dp"
+                android:text="其他金额"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvPay"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape_change_phone_over"
+                android:gravity="center"
+                android:paddingVertical="12dp"
+                android:text="充值"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E6D9B</color>
+    <color name="colorPrimaryDark">#1E6D9B</color>
+    <color name="colorAccent">#60a5fe</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text_black">#3E3A39</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_yellow">#FED400</color>
+
+    <color name="themeColor">#E31912</color>//主题色
+    <color name="titleColor">#333333</color>//标题颜色
+    <color name="textColor">#666666</color>//正文颜色
+    <color name="explainColor">#999999</color>//注释颜色
+    <color name="lineColor">#F5F5F5</color>//分割线颜色
+    <color name="walletRedColor">#FC5358</color>
+    <color name="color_eeeeee">#EEEEEE</color>
+
+</resources>

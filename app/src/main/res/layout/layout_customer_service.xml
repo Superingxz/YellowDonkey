@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customer_service_layout"
+    android:layout_width="280dp"
+    android:layout_height="280dp"
+    android:background="@drawable/shape_circular_white"
+    android:layout_centerInParent="true"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineColor"
+        android:layout_centerInParent="true"
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/lineColor"
+        android:layout_centerInParent="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50dp"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_vehicle_fault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/vehicle_fault_icon"
+            android:text="@string/vehicle_fault"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_illegal_declaration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/illegal_declaration_icon"
+            android:text="@string/illegal_declaration"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_online_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/online_service_icon"
+            android:text="@string/online_service"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_user_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/user_guide_icon"
+            android:text="@string/user_guide"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/customer_service"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

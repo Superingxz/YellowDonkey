@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginTop="2dp"
+    android:gravity="center_horizontal"
+    >
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/unlock_icon"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_black"
+        android:layout_marginTop="35dp"
+        android:text="00:00"
+        />
+
+    <com.vondear.rxui.view.roundprogressbar.RxRoundProgressBar
+        android:id="@+id/yellow_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        app:rcBackgroundColor="@color/progress_gray"
+        app:rcBackgroundPadding="2dp"
+        app:rcMax="100"
+        app:rcProgress="0"
+        app:rcProgressColor="@color/text_yellow"
+        app:rcRadius="20dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="14sp"
+        android:textColorHint="@color/hint_gray"
+        android:hint="@string/electric_bike_opening"
+        />
+
+</android.support.v7.widget.LinearLayoutCompat>

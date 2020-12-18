@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ruanjie.donkey">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- 腾讯地图 SDK 要求的权限(开始) -->
+    <!-- 访问网络获取地图服务 -->
+    <!-- 检查网络可用性 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 访问WiFi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 需要外部存储写权限用于保存地图缓存 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 获取 device id 辨别设备 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 获取日志读取权限，帮助我们提高地图 sdk 稳定性 -->
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" /> <!-- 腾讯地图 SDK 要求的权限(结束) -->
+    <!-- 通过GPS得到精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 通过网络得到粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 修改WiFi状态，发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:configChanges="locale|layoutDirection"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/android_p_network_security_config"
+        android:sharedUserId="android.uid.system"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ui.sign.ChangePasswordActivity"></activity>
+
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="BHRBZ-PFUAP-BQMD4-VSGAB-K54QE-6IBHM" />
+
+        <activity android:name=".ui.LanguageActivity" />
+        <activity android:name=".ui.bluetooth.BLEManagerActivity" />
+
+        <service android:name=".ble.BLEService" />
+
+        <activity android:name=".ui.bluetooth.BLESearchActivity" /> <!-- android:windowSoftInputMode="adjustPan|stateHidden" -->
+        <!--
+<activity
+            android:name=".ui.start.SplashActivity"
+            android:theme="@style/SplashTheme">
+        </activity>
+        -->
+        <activity android:name=".ui.start.GuideActivity" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:configChanges="locale|layoutDirection|keyboard|orientation|screenSize"/>
+        <!--
+<activity
+            android:name=".ui.map.MainMapActivity"
+            android:configChanges="locale|layoutDirection|keyboard|orientation|screenSize"
+            >
+             &lt;!&ndash;华为等部分机型 刘海屏处理 &ndash;&gt;
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <!--android:theme="@style/SplashTheme"-->
+        <activity
+            android:name=".ui.start.SplashActivity"
+            android:theme="@style/SplashTheme"
+            >
+            <!-- 华为等部分机型 刘海屏处理 -->
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.message.MyMessageActivity" />
+        <activity
+            android:name=".ui.TestToolbarActivity"
+            android:configChanges="locale|layoutDirection" />
+        <activity android:name=".ui.testMvp.TestMvpActivity" />
+        <activity android:name=".ui.testRefresh.TestRefreshActivity" />
+        <activity android:name=".ui.SocketTestActivity" /> <!-- android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" -->
+        <activity android:name=".ui.webView.WebViewActivity" />
+        <activity
+            android:name=".ui.sign.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.sign.RegisterActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.sign.FindPasswordActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.scanner.ScanUnlockActivity" />
+        <activity android:name=".ui.unlock.WaitUnlockActivity" />
+        <activity android:name=".ui.billing.BillingModeActivity" />
+        <activity android:name=".ui.billing.UseTimingActivity" />
+        <activity android:name=".ui.billing.PayArrearsActivity" />
+        <activity android:name=".ui.upload.FaultUploadActivity" />
+        <activity android:name=".ui.upload.IllegalUploadActivity" />
+        <activity android:name=".ui.help.HelpListActivity" />
+        <activity
+            android:name=".ui.customer.CustomerServiceActivity"
+            android:theme="@style/ThemeTransparent" />
+        <activity android:name=".ui.drawer.UserInfoActivity" />
+        <activity android:name=".ui.drawer.ShowBigImageActivity" />
+        <activity android:name=".ui.drawer.ChangeNicknameActivity" />
+        <activity android:name=".ui.drawer.ChangePhoneActivity" />
+        <activity android:name=".ui.drawer.RealNameApplyActivity" />
+        <activity android:name=".ui.drawer.SettingActivity" />
+        <activity android:name=".ui.drawer.ChangePwdActivity" />
+        <activity android:name=".ui.drawer.SetPwdActivity" />
+        <activity android:name=".ui.drawer.JoinSelectActivity" />
+        <activity android:name=".ui.drawer.JoinAreaActivity" />
+        <activity android:name=".ui.drawer.JoinCityActivity" />
+        <activity android:name=".ui.drawer.JoinCityResultActivity" />
+        <activity android:name=".ui.drawer.MyWalletActivity" />
+        <activity android:name=".ui.drawer.RechargeActivity" />
+        <activity android:name=".ui.drawer.TodayDatasDetailActivity" />
+        <activity android:name=".ui.drawer.WithDrawActivity" />
+        <activity android:name=".ui.drawer.WalletDetailActivity" />
+        <activity android:name=".ui.drawer.PayDepositActivity" />
+        <activity android:name=".ui.drawer.ReturnDepositActivity" />
+        <activity android:name=".ui.drawer.MyCouponsActivity" />
+        <activity android:name=".ui.drawer.MyTravelActivity" />
+        <activity android:name=".ui.drawer.TravelDetailActivity" />
+        <activity android:name=".ui.drawer.InviteFriendsActivity" />
+        <activity android:name=".ui.drawer.MainTainActivity" />
+        <activity android:name=".ui.drawer.MainTainUploadActivity" />
+        <activity android:name=".ui.drawer.MaintainHistoryActivity" />
+        <activity android:name=".ui.drawer.ExChangeActivity" />
+        <activity android:name=".ui.drawer.EXRealNameApplyActivity" />
+        <activity android:name=".ui.scanner.ExScanActivity" />
+        <activity android:name=".ui.drawer.ExChangeHistoryActivity" />
+        <activity android:name=".ui.drawer.BackDepositActivity" />
+        <activity android:name=".ui.drawer.BackDepositResultActivity" />
+        <activity android:name=".ui.drawer.WalletDetailActivity2" />
+        <activity android:name=".ui.drawer.BindPhoneActivity" /> <!-- 微信 -->
+        <activity android:name=".ui.shop.ShopActivity" />
+        <activity android:name=".ui.shop.ShopDetailActivity" />
+        <activity android:name=".ui.shop.ShopOrderActivity" />
+        <activity android:name=".ui.shop.ShopCouponActivity" />
+        <activity android:name=".ui.shop.ShopCoinActivity" />
+        <activity android:name=".ui.shop.ShopSearchActivity" />
+        <activity android:name=".ui.shop.ShopAppraiceActivity" />
+        <activity android:name=".ui.shop.GoodsDetailActivity" />
+        <activity android:name=".ui.shop.ShowAddressActivity" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" /> <!-- 微信 -->
+        <!-- 新浪 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 新浪 -->
+        <!-- 支付宝 -->
+        <!-- <activity -->
+        <!-- android:name=".apshare.ShareEntryActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <!-- android:exported="true" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" /> -->
+        <!-- 支付宝 -->
+        <!-- qq -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1109684863" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- qq -->
+        <provider
+            android:name=".widget.MyFileProvider"
+            android:authorities="com.ruanjie.donkey.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+    </application>
+
+</manifest>

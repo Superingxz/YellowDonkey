@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scan_containter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <SurfaceView
+        android:id="@+id/scan_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        />
+
+    <include layout="@layout/layout_logo_toolbar"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/scan_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/aim_vehicle_plate_qr_code"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:id="@+id/scan_layout"
+        android:layout_width="295dp"
+        android:layout_height="295dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/scan_frame_icon"
+        >
+
+    <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/scan_icon"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_flashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scan_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:drawableTop="@mipmap/flashlight_icon"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="@string/flashlight"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
